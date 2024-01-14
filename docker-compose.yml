@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: .
+    image: dentalweb-backend-img
+    container_name: dentalweb-backend
+    env_file: .env
+    ports:
+      - 8123:8123
+    volumes:
+      - .:/home/sodavision
+    environment:
+      - TZ=America/Sao_Paulo
+    restart: unless-stopped
