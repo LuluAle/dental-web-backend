@@ -13,4 +13,4 @@ app.add_middleware(
 
 @app.get("/")
 async def read_root():
-    return {"Hello": "World"}
+    return {"Message": "Boas Vindas ao Portal Dental Web. Sorria!"}
