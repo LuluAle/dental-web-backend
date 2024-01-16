@@ -1,0 +1,21 @@
+site_name: Docs | Dental Web API
+repo_url: https://github.com/LuluAle/dental-web-backend
+repo_name: dental-web-backend
+edit_uri: https://github.com/LuluAle/dental-web-backend?path=/docs
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/logo.png
+  favicon: assets/logo.png
+
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [app]
