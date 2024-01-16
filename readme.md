@@ -102,7 +102,8 @@ sec         Realiza uma auditoria de segurança nas dependências do pip
 test        Executa todos os testes unitários
 cov         Executa os testes e abre a pasta do relatório HTML de cobertura de testes
 report      Abre a pasta do relatório HTML de cobertura de testes
-docker      Faz o build da imagem e executa o container docker com docker-compose
+docker      Executa o container docker com docker-compose
+build       Faz o build da imagem e executa o container docker com docker-compose
 clean       Limpa o cache do projeto
 docs_build  Faz o build da documentação do projeto
 lint_check  Imprime no terminal relatório de linting, sem aplicar modificações

@@ -94,9 +94,15 @@ report = { cmd = """
 
 docker = { cmd = """
     echo "### Docker #############################################"
+    task req &&
     docker compose up
-    """, help = "Faz o build da imagem e executa o container docker com docker-compose" }
+    """, help = "Executa o container docker com docker-compose" }
 
+build = { cmd = """
+    echo "### Docker #############################################"
+    task req &&
+    docker compose up --build
+    """, help = "Faz o build da imagem e executa o container docker com docker-compose" }
 
 clean = { cmd = """
     echo "### Clean ###############################################"
